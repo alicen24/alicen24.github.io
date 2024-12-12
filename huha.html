@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>คำถามรักๆ</title>
+    <title>question</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -66,12 +66,12 @@
 </head>
 <body>
 
-<h1>นี่ๆ มีอะไรจะถามหน่อย</h1>
-<div class="question">คือว่างี้นะ แบบ คือนี่อยากถามว่า เอ่ออออออ.........แกอยากลองคุยกันแบบจริงจังกับเค้ามั้ยย>< หรือแกมีคนในใจแล้วมาบอกกันตรงๆได้ ยินดีนะ</div>
+<h1>question หลัก </h1>
+<div class="question"> question รอง </div>
 
 <div class="buttons">
-    <button class="btn ok-kub" onclick="answer('ok')">OK kub</button>
-    <button class="btn oh-friend" onclick="answer('friend')">Oh on just friend</button>
+    <button class="btn ok-kub" onclick="answer('ok')">An yes</button>
+    <button class="btn oh-friend" onclick="answer('friend')">An no</button>
 </div>
 
 <div id="result" class="result"></div>
@@ -81,9 +81,9 @@
         var resultDiv = document.getElementById("result");
 
         if (response === 'ok') {
-            resultDiv.innerHTML = "<p>ค้าบ สัญญาว่าจะพยายามไม่ทำให้แกอึดอัดนะ</p>";
+            resultDiv.innerHTML = "<p>An yespast</p>";
         } else {
-            resultDiv.innerHTML = "<p>ไม่เป็นไร ยังไงก็เป็นเพื่อนกันอยู่แล้ว ไม่ต้องคิดมาก</p>";
+            resultDiv.innerHTML = "<p>An nopst</p>";
         }
     }
 </script>
